@@ -11,6 +11,14 @@
     "@actions/github": "^2.0.1",
     "esm": "^3.2.25"
   },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "cross-env": "^6.0.3",
+    "mocha": "^6.2.1",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.8.0"
+  },
   "private": false,
   "engines": {
     "node": "10.* || >= 12.*"

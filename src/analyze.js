@@ -1,3 +1,3 @@
 export default () => {
-	console.log('Analysis complete.');
+  console.log('Analysis complete.');
 };
