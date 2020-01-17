@@ -1,9 +1,11 @@
 import { setFailed } from '@actions/core';
+import execa from 'execa';
 import convertConfig from './helpers';
 import analyze from './analyze';
 
 export default async function main() {
   try {
+    await execa('yarn', ['install']);
     await analyze(convertConfig([
       'use-yarn',
       'repo-token',
