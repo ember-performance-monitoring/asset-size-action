@@ -1,5 +1,4 @@
 import { setFailed } from '@actions/core';
-import execa from 'execa';
 import convertConfig from './helpers';
 import analyze from './analyze';
 
