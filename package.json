@@ -1,0 +1,30 @@
+{
+  "name": "asset-size-action",
+  "version": "0.0.1",
+  "description": "track asset sizes between commits",
+  "main": "src/action.js",
+  "repository": "git@github.com:ember-performance-monitoring/asset-size-action.git",
+  "author": "Eli Flanagan <efx@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.2.1",
+    "@actions/github": "^2.0.1",
+    "esm": "^3.2.25"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "cross-env": "^6.0.3",
+    "mocha": "^6.2.1",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.8.0"
+  },
+  "private": false,
+  "engines": {
+    "node": "10.* || >= 12.*"
+  },
+  "volta": {
+    "node": "12.14.1",
+    "yarn": "1.21.1"
+  }
+}
