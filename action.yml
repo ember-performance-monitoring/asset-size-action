@@ -1,0 +1,16 @@
+name: '@ember-performance-monitoring/asset-size'
+description: 'Analyze asset sizes in each pull request'
+inputs:
+  use-yarn:
+    description: 'Whether to install dependencies using yarn'
+    required: false
+    default: true
+  repo-token:
+    description: 'Github Auth Token with permissions for reading, creating comments on PRs as well as updating comments previously created by the action'
+    required: false
+runs:
+  using: 'node12'
+  main: 'src/action.js'
+branding:
+  icon: 'activity'
+  color: 'orange'

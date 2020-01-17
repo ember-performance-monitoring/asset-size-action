@@ -1,0 +1,14 @@
+{
+  "name": "asset-size-action",
+  "version": "0.0.1",
+  "description": "track asset sizes between commits",
+  "main": "src/action.js",
+  "repository": "git@github.com:ember-performance-monitoring/asset-size-action.git",
+  "author": "Eli Flanagan <efx@users.noreply.github.com>",
+  "license": "MIT",
+  "private": false,
+  "volta": {
+    "node": "12.14.1",
+    "yarn": "1.21.1"
+  }
+}
