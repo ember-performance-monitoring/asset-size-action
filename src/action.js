@@ -5,7 +5,6 @@ import analyze from './analyze';
 
 export default async function main() {
   try {
-    await execa('yarn', ['install']);
     await analyze(convertConfig([
       'use-yarn',
       'repo-token',
