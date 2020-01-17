@@ -1,13 +1,12 @@
-const core = require('@actions/core');
+import { getInput } from '@actions/core';
 /*
  * Parse GitHub action config values into JavaScript values
  */
-
-module.exports = configProperties => {
+export function convertConfig(configProperties) {
 	const config = {};
 
 	configProperties.forEach(prop => {
-  	let input = core.getInput(prop);
+  	let input = getInput(prop);
   	if (input === '') {
     	input = undefined;
   	} else if (input === 'true') {

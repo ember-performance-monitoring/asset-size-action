@@ -8,8 +8,9 @@
   "license": "MIT",
   "dependencies": {
     "@actions/core": "^1.2.1",
-    "@actions/github": "^2.0.1"
-	},
+    "@actions/github": "^2.0.1",
+    "esm": "^3.2.25"
+  },
   "private": false,
   "engines": {
     "node": "10.* || >= 12.*"

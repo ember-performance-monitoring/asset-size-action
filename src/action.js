@@ -1,7 +1,6 @@
-const core = require('@actions/core');
-const github = require('@actions/github');
-const analyze = require('./analyze');
-const convertConfig = require('./util-config');
+import { convertConfig } from './helpers';
+import analyze from './analyze';
+import { getInput, setFailed } from '@actions/core';
 
 const configProperties = [
   'use-yarn',
@@ -12,8 +11,8 @@ async function main() {
   try {
     await analyze(convertConfig(config));
   } catch (e) {
-    core.setFailed(e.message);
+    setFailed(e.message);
   }
 }
 
-main();
+export default main;
