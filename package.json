@@ -7,7 +7,7 @@
   "author": "Eli Flanagan <efx@users.noreply.github.com>",
   "license": "MIT",
   "dependencies": {
-    "@actions/core": "^1.2.1",
+    "@actions/core": "^1.2.6",
     "@actions/github": "^2.0.1",
     "esm": "^3.2.25",
     "execa": "^4.0.0"
